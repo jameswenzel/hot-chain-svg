@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.11;
 
-import {Test} from 'forge-std/Test.sol';
-import {IRenderer} from 'hot-chain-svg/IRenderer.sol';
-import {QA} from 'hot-chain-svg-script/qa.s.sol';
+import {Test} from "forge-std/Test.sol";
+import {IRenderer} from "../contracts/IRenderer.sol";
+import {QA} from "../script/qa.s.sol";
 
 /**
  * @dev Foundry can't "watch" scripts (for now?) so include this in the test folder.
@@ -14,12 +14,7 @@ contract Watch is QA, Test {
     function setUp() public virtual {}
 
     /// @dev renderer-specific setup
-    function deployAndConfigureRenderer()
-        internal
-        virtual
-        override
-        returns (IRenderer)
-    {
+    function deployAndConfigureRenderer() internal virtual override returns (IRenderer) {
         return super.deployAndConfigureRenderer();
     }
 
