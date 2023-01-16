@@ -4,7 +4,7 @@ A toolkit for building on-chain SVG projects.
 
 ## Demo
 
-![Demo of hot-chain-svg. The user is editing a Solidity file, and as they save it the resulting SVG is updated](.github/demo.gif)
+![Demo of hot-chain-SVG. The user is editing a Solidity file, and as they save it the resulting SVG is updated](.github/demo.gif)
 
 ## Getting started
 
